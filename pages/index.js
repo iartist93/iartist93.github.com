@@ -5,11 +5,13 @@ import Link from 'next/link';
 import ProjectCard from '../components/ProjectCard';
 import projectData from '../projectData';
 
+import ReactPlayer from 'react-player';
+
 const HomePage = () => {
   return (
     <div sx={{ border: '8px solid rgb(182, 201, 240)' }}>
       <div sx={{ variant: 'layout.page', alignItems: 'flex-start' }}>
-        <Themed.h1 sx={{ fontSize: 6, width: 400 }}>
+        <Themed.h1 sx={{ fontSize: [4, 6], maxWidth: 400 }}>
           Hi, I am Ahmad Ayman
         </Themed.h1>
         <div
@@ -26,8 +28,8 @@ const HomePage = () => {
           <p
             sx={{
               ml: 12,
-              width: 500,
-              fontSize: 3,
+              // width: 500,
+              fontSize: [2, 2, 3],
               fontFamily: 'text',
               lineHeight: 'tight',
             }}
@@ -119,17 +121,22 @@ const HomePage = () => {
             sx={{
               display: 'flex',
               justifyContent: 'center',
+              alignItems: 'flex-start',
             }}
           >
-            <iframe
-              src='https://player.vimeo.com/video/429246658?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-              width='620'
-              height='620'
-              frameborder='0'
-              allow='autoplay; fullscreen; picture-in-picture'
-              allowfullscreen
-              title='Coco Logo Sewing - Houdini 18 Vellum - Hip File'
-            ></iframe>
+            <ReactPlayer
+              url='https://vimeo.com/429246658'
+              width={640}
+              height={640}
+              config={{
+                vimeo: {
+                  playerOptions: {
+                    autoplay: false,
+                    playsinline: false,
+                  },
+                },
+              }}
+            />
           </div>
         </div>
         <div sx={{ width: '100%', mt: 40 }}>
