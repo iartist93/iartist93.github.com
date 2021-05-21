@@ -1,0 +1,20 @@
+{
+  "name": "ahmad-ayman",
+  "author": "ahmad ayman",
+  "email": "mongez.me@gmail.com",
+  "license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@theme-ui/presets": "^0.8.4",
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "theme-ui": "^0.8.4"
+  }
+}
