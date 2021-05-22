@@ -73,8 +73,9 @@ const ProjectCard = ({ project }) => {
               mr: 2,
             }}
           >
-            {tools.map((tool) => (
+            {tools.map((tool, index) => (
               <img
+                key={index}
                 src={`/assets/tools/${tool}.svg`}
                 alt='redux'
                 sx={{ variant: 'avatars.tools', borderRadius: 8 }}

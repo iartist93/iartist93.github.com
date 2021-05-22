@@ -1,13 +1,13 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-const Projects = () => {
+const Posts = () => {
   const router = useRouter();
 
   return (
     <div>
-      <h3 color={router === this}>Projects Page Index</h3>
-      <button onClick={(e) => router.push('projects/[id]', '/projects/1')}>
+      <h3 color={router === this}>Posts Page Index</h3>
+      <button onClick={(e) => router.push('Posts/[id]', '/Posts/1')}>
         Project 1
       </button>
       <button onClick={(e) => router.push('/')}>Homepage</button>
@@ -15,4 +15,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Posts;

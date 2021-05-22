@@ -2,12 +2,90 @@
 
 import { Themed } from 'theme-ui';
 import Link from 'next/link';
-import ProjectCard from '../components/ProjectCard';
-import projectData from '../projectData';
+import ProjectCard from '../src/components/ProjectCard';
+import projectData from '../src/data/projectData';
 
 import ReactPlayer from 'react-player';
+import { useEffect } from 'react';
+import { postData } from '../src/helpers/post';
 
 const HomePage = () => {
+  const getAllPosts = async () => {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts/`);
+      const result = await response.json();
+      console.log('GET ', result);
+      return result;
+    } catch (e) {
+      console.error(`Error getting posts `, e);
+    }
+  };
+
+  const updatePost = async (id, post) => {
+    try {
+      const result = await postData(
+        `${process.env.NEXT_PUBLIC_API_URL}/posts/${id}`,
+        post,
+        'PATCH'
+      );
+      console.log('updated ', result);
+      return result;
+    } catch (e) {
+      console.error(`Error updating post ${id} `, e);
+    }
+  };
+
+  const deletePost = async (id) => {
+    try {
+      const result = await postData(
+        `${process.env.NEXT_PUBLIC_API_URL}/posts/${id}`,
+        {},
+        'DELETE'
+      );
+      console.log('deleted ', result);
+      return result;
+    } catch (e) {
+      console.error(`Error deleting post ${id} `, e);
+    }
+  };
+
+  const createNewPost = async (post) => {
+    try {
+      const result = await postData(
+        `${process.env.NEXT_PUBLIC_API_URL}/posts`,
+        post
+      );
+      console.log('created ', result);
+      return result;
+    } catch (e) {
+      console.error(`Error creating new post  `, e);
+    }
+  };
+
+  const sendAll = async () => {
+    const post = {
+      title: 'post 2',
+      content: 'post 2 content ',
+    };
+    try {
+      const newPost = await createNewPost(post);
+      await deletePost(0);
+      await createNewPost(post);
+      await updatePost(newPost.id, {
+        id: 1,
+        title: 'post 2222222222222',
+        content: 'post 2222222222222222 content ',
+      });
+      await getAllPosts();
+    } catch (e) {
+      console.error('Error occured ', e);
+    }
+  };
+
+  useEffect(() => {
+    sendAll();
+  }, []);
+
   return (
     <div sx={{ border: '8px solid rgb(182, 201, 240)' }}>
       <div sx={{ variant: 'layout.page', alignItems: 'flex-start' }}>
@@ -109,8 +187,8 @@ const HomePage = () => {
               justifyContent: 'center',
             }}
           >
-            {projectData.map((project) => (
-              <ProjectCard project={project} />
+            {projectData.map((project, index) => (
+              <ProjectCard key={index} project={project} />
             ))}
           </div>
         </div>
