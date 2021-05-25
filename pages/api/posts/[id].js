@@ -19,11 +19,14 @@ const hanlder = nc()
   })
   .patch((req, res) => {
     const { id } = req.query;
-    const post = req.body;
+    const updates = req.body;
     const index = getIndex(id);
+
     if (index >= 0) {
-      posts[index] = post;
-      res.send(post);
+      const post = getPost(id);
+      const updatedPost = { ...post, ...updates };
+      posts[index] = updatedPost;
+      res.send(updatedPost);
     } else {
       res.status(404);
       res.end('No post found!');

@@ -47,21 +47,7 @@ const ProjectCard = ({ project }) => {
           <button
             onClick={handleWebsiteClick}
             sx={{
-              backgroundColor: '#b6c9f0',
-              outline: 'none',
-              width: 75,
-              height: 35,
-              border: 'none',
-              color: 'rgb(33, 9, 78)',
-              fontWeight: 'heading',
-              borderRadius: 10,
-              boxShadow: '-2px 2px 5px 0px rgba(230,230,230,1)',
-              ':hover': {
-                backgroundColor: '#ccd9f5',
-              },
-              ':active': {
-                backgroundColor: '#a4b5d8',
-              },
+              variant: 'layout.primaryButton',
             }}
           >
             Website
