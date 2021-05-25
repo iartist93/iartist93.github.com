@@ -146,8 +146,8 @@ const HomePage = () => {
             lineHeight: 'tight',
           }}
         >
-          Front-End Engineer, VFX Artist. Interested in coding, arts,
-          storytelling, animation, games, cooking, baking.
+          FrontEnd Engineer & 3D Artist. Interested in coding, arts,
+          storytelling, animation, games, cooking and baking.
         </p>
       </div>
       <section>
