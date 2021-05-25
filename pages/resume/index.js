@@ -54,7 +54,7 @@ const Resume = () => {
         Front-End Engineer
       </p>
       <Themed.h1 sx={{ fontSize: [4, 6], maxWidth: 400, ml: [12, 0], mt: 0 }}>
-        My Resume,
+        Resume,
       </Themed.h1>
       <div
         sx={{

@@ -1,6 +1,16 @@
 export default {
   Experience: [
     {
+      title: 'Flutter Developer',
+      where: 'Freelancer',
+      // website: 'https://aromastudios.com/',
+      startDate: 'Dec 2020',
+      endDate: 'Feb 2021',
+      description: [
+        'Designed and developed Food Tracker App using Flutter, BLoC and SQLite for a children health origanization',
+      ],
+    },
+    {
       title: 'FX Artist/TD',
       where: 'Aroma Studios',
       website: 'https://aromastudios.com/',
