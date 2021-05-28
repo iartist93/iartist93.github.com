@@ -3,7 +3,7 @@ export default [
     title: 'Todo App',
     content: 'Todo app using vanilla-js and custom redux implementation.',
     tools: ['javascript', 'redux'],
-    website: 'https://oknext.netlify.app/',
+    website: 'https://mykeep.netlify.app/',
     github: 'https://github.com/iartist93/todo-app',
   },
   {
@@ -11,7 +11,7 @@ export default [
     content: 'Realtime chat app (Slack Clone) using React and Firebase.',
     tools: ['javascript', 'react', 'firebase'],
     website: 'https://react-chat-fba68.firebaseapp.com/',
-    github: 'https://github.com/iartist93/react-chat',
+    github: 'https://github.com/iartist93/slack-clone',
   },
   {
     title: 'Polls',
@@ -25,7 +25,7 @@ export default [
     content:
       "The app is for managing user's books into shelves Currently Reading , Read and Want to Read",
     tools: ['javascript', 'react'],
-    website: 'https://github.com/iartist93/my-reads',
-    github: 'https://github.com/iartist93/my-reads',
+    website: 'https://mygoodreads.netlify.app/',
+    github: 'https://github.com/iartist93/goodreads-clone',
   },
 ];
