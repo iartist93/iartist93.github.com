@@ -88,6 +88,7 @@ const theme = {
     text: '#000',
     background: '#fff',
     primary: '#33e',
+    border: 'rgb(182, 201, 240)',
     bg1: 'rgb(255, 229, 226)',
     bg2: '#FfF7F8',
     bg3: 'rgb(246, 247, 248)',

@@ -1,6 +1,8 @@
-/** @jsxImportSource theme-ui */
+/** @jsxRuntime classic */
+/** @jsx jsx */
 
-import { Themed } from 'theme-ui';
+import { jsx, Themed } from 'theme-ui';
+import { darken, lighten } from '@theme-ui/color';
 import Link from 'next/link';
 import ProjectCard from '../src/components/ProjectCard';
 import projectData from '../src/data/projectData';
@@ -97,7 +99,21 @@ const HomePage = () => {
           justifyContent: 'space-between',
         }}
       >
-        <Themed.h1 sx={{ fontSize: [4, 6], maxWidth: 400 }}>
+        <Themed.h1
+          sx={{
+            fontSize: [4, 6],
+            maxWidth: 400,
+            cursor: 'pointer',
+            ':hover': {
+              transform: 'rotateY(-0.5deg)',
+              textDecoration: 'underline',
+              backgroundImage: (t) =>
+                `linear-gradient(to top, ${'black'}, ${t.colors.blue1})`,
+              backgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            },
+          }}
+        >
           Hi, I am Ahmad Ayman
         </Themed.h1>
         <a

@@ -12,6 +12,7 @@
     "buildexport": "next build && next export"
   },
   "dependencies": {
+    "@theme-ui/color": "^0.9.1",
     "@theme-ui/presets": "^0.8.4",
     "next": "^10.2.0",
     "next-connect": "^0.10.1",
