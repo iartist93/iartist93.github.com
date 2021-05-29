@@ -107,10 +107,10 @@ const HomePage = () => {
             ':hover': {
               transform: 'rotateY(-0.5deg)',
               textDecoration: 'underline',
-              backgroundImage: (t) =>
-                `linear-gradient(to top, ${'black'}, ${t.colors.blue1})`,
-              backgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              // backgroundImage: (t) =>
+              //   `linear-gradient(to top, ${'black'}, ${t.colors.blue1})`,
+              // backgroundClip: 'text',
+              // WebkitTextFillColor: 'transparent',
             },
           }}
         >
