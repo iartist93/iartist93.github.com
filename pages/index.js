@@ -144,10 +144,10 @@ const HomePage = () => {
               pl: 2,
               pt: 1,
               ':hover': {
-                backgroundColor: '#ccd9f5',
+                backgroundColor: 'heighlight',
               },
               ':active': {
-                backgroundColor: '#a4b5d8',
+                backgroundColor: 'active',
               },
             }}
           >
@@ -164,7 +164,11 @@ const HomePage = () => {
         <img
           src='/assets/avatar.jpg'
           alt='avatar'
-          sx={{ width: 70, borderRadius: '50%' }}
+          sx={{
+            width: 70,
+            borderRadius: '50%',
+            boxShadow: (theme) => `-1px 1px 2px 0px ${theme.colors.shadow}`,
+          }}
         />
         <p
           sx={{

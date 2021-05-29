@@ -64,7 +64,7 @@ const theme = {
       borderRadius: 8,
       boxShadow: (theme) => `-2px 2px 5px 0px ${theme.colors.shadow}`,
       ':hover': {
-        backgroundColor: 'heightlight',
+        backgroundColor: 'heighlight',
       },
       ':active': {
         backgroundColor: 'active',
@@ -90,21 +90,21 @@ const theme = {
     text: '#000',
     background: '#fff',
     primary: '#33e',
-    border: 'rgb(182, 201, 240)',
+    border: '#b6c9f0',
     bgblue100: '#f8fafe', //cards, resume bg
     bgblue200: '#fafcff',
     // bgblue300: '#e5f2ff',
-    bgblue300: '#b6c9f0', // buttons
-    black300: 'rgb(33, 9, 78)', // button text
+    bgblue300: '#c5d4f3', // buttons
+    black300: '#373c48', // button text
     black400: '#5c6166',
     red100: '#FFDEDA',
     shadow: '#e9eaed',
-    heightlight: '#ccd9f5',
+    heighlight: '#ccd9f5',
     active: 'a4b5d8',
     modes: {
       dark: {
         text: '#E6F6F7',
-        background: '#333F5B',
+        background: '#252d53',
         primary: '#0cf',
         // bgblue100: '#263154',
         bgblue100: '#374049',
@@ -114,8 +114,8 @@ const theme = {
         black400: '#758392',
         shadow: '#293249',
         red100: '#E2FCFF',
-        heightlight: '#ccd9f5',
-        active: 'a4b5d8',
+        heighlight: '#6b7486',
+        active: '#525b6c',
       },
     },
     // blue1: '#6930c3',
