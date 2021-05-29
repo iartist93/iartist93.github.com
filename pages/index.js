@@ -275,9 +275,10 @@ const HomePage = () => {
             justifyContent: 'center',
           }}
         >
-          Soon...
+          WIP...
         </div>
       </div>
+
       {/* <Themed.a as={Link} href='/projects'>
           Projects
         </Themed.a>
