@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 
-import { jsx, Themed } from 'theme-ui';
+import { jsx, Themed, useColorMode } from 'theme-ui';
 import { darken, lighten } from '@theme-ui/color';
 import Link from 'next/link';
 import ProjectCard from '../src/components/ProjectCard';
@@ -10,6 +10,7 @@ import projectData from '../src/data/projectData';
 import ReactPlayer from 'react-player';
 import { useEffect } from 'react';
 import { postData } from '../src/helpers/post';
+import ColorMode from '../src/components/ColorMode';
 
 const HomePage = () => {
   const getAllPosts = async () => {
@@ -89,6 +90,8 @@ const HomePage = () => {
     sendAll();
   }, []);
 
+  const [colorMode] = useColorMode();
+
   return (
     <div sx={{ variant: 'layout.page', alignItems: 'flex-start' }}>
       <div
@@ -108,7 +111,7 @@ const HomePage = () => {
               transform: 'rotateY(-0.5deg)',
               textDecoration: 'underline',
               // backgroundImage: (t) =>
-              //   `linear-gradient(to top, ${'black'}, ${t.colors.blue1})`,
+              //   `linear-gradient(to top, ${'black'}, ${t.colors.primary})`,
               // backgroundClip: 'text',
               // WebkitTextFillColor: 'transparent',
             },
@@ -116,31 +119,41 @@ const HomePage = () => {
         >
           Hi, I am Ahmad Ayman
         </Themed.h1>
-        <a
-          as={Link}
-          href='/resume'
+        <div
           sx={{
-            backgroundColor: 'lightblue1',
-            outline: 'none',
-            width: 75,
-            height: 35,
-            border: 'none',
-            color: 'btn3',
-            fontWeight: 'heading',
-            borderRadius: 4,
-            textDecoration: 'none',
-            pl: 2,
-            pt: 1,
-            ':hover': {
-              backgroundColor: '#ccd9f5',
-            },
-            ':active': {
-              backgroundColor: '#a4b5d8',
-            },
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
-          Resume
-        </a>
+          <ColorMode />
+          <a
+            as={Link}
+            href='/resume'
+            sx={{
+              backgroundColor: 'bgblue300',
+              outline: 'none',
+              width: 75,
+              height: 35,
+              border: 'none',
+              color: 'black300',
+              fontWeight: 'section',
+              borderRadius: 4,
+              textDecoration: 'none',
+              pl: 2,
+              pt: 1,
+              ':hover': {
+                backgroundColor: '#ccd9f5',
+              },
+              ':active': {
+                backgroundColor: '#a4b5d8',
+              },
+            }}
+          >
+            Resume
+          </a>
+        </div>
       </div>
       <div
         sx={{
@@ -175,9 +188,12 @@ const HomePage = () => {
             rel='noopener noreferrer'
           >
             <img
-              src='/assets/rounded/github.svg'
+              src={'/assets/rounded/github.svg'}
               alt='github'
-              sx={{ variant: 'avatars.social' }}
+              sx={{
+                variant: 'avatars.social',
+                filter: colorMode === 'dark' ? 'invert(0.9)' : 'invert(0)',
+              }}
             />
           </a>
           <a
@@ -188,7 +204,10 @@ const HomePage = () => {
             <img
               src='/assets/rounded/linkedin.svg'
               alt='linkedin'
-              sx={{ variant: 'avatars.social' }}
+              sx={{
+                variant: 'avatars.social',
+                filter: colorMode === 'dark' ? 'invert(0.9)' : 'invert(0)',
+              }}
             />
           </a>
           <a
@@ -199,7 +218,10 @@ const HomePage = () => {
             <img
               src='/assets/rounded/vimeo.svg'
               alt='vimeo'
-              sx={{ variant: 'avatars.social' }}
+              sx={{
+                variant: 'avatars.social',
+                filter: colorMode === 'dark' ? 'invert(0.9)' : 'invert(0)',
+              }}
             />
           </a>
 
@@ -211,7 +233,10 @@ const HomePage = () => {
             <img
               src='/assets/rounded/instagram.svg'
               alt='instagram'
-              sx={{ variant: 'avatars.social' }}
+              sx={{
+                variant: 'avatars.social',
+                filter: colorMode === 'dark' ? 'invert(0.9)' : 'invert(0)',
+              }}
             />
           </a>
           <a
@@ -222,7 +247,10 @@ const HomePage = () => {
             <img
               src='/assets/rounded/email.svg'
               alt='email'
-              sx={{ variant: 'avatars.social' }}
+              sx={{
+                variant: 'avatars.social',
+                filter: colorMode === 'dark' ? 'invert(0.9)' : 'invert(0)',
+              }}
             />
           </a>
         </section>

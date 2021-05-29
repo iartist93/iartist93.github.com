@@ -17,7 +17,7 @@ const SectionContent = ({
             href={website}
             sx={{
               textDecoration: 'none',
-              color: 'blue1',
+              color: 'primary',
               display: ['block', 'inline'],
             }}
           >
@@ -33,8 +33,8 @@ const SectionContent = ({
             order: [1, 2],
           }}
         >
-          <span sx={{ mr: 1, color: 'darkblue3' }}>{startDate}</span> -{' '}
-          <span sx={{ ml: 1, color: 'darkblue3' }}>{endDate}</span>
+          <span sx={{ mr: 1, color: 'black400' }}>{startDate}</span> -{' '}
+          <span sx={{ ml: 1, color: 'black400' }}>{endDate}</span>
         </p>
       </div>
       <p sx={{ variant: 'layout.contentText' }}>

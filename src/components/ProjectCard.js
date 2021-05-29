@@ -16,15 +16,17 @@ const ProjectCard = ({ project }) => {
     <div
       sx={{
         width: 300,
-        height: 200,
+        height: 210,
         m: 10,
+        p: 2,
         pl: 15,
-        backgroundColor: 'bglight1',
+        backgroundColor: 'bgblue100',
         borderRadius: 10,
-        // borderLeft: `8px solid rgb(196, 73, 194)`,
-        borderLeft: `8px solid rgb(255, 229, 226)`,
+        borderLeft: `8px solid black`,
+        borderColor: 'red100',
         display: 'flex',
         flexDirection: 'column',
+        boxShadow: (theme) => `2px 2px 5px 0px ${theme.colors.shadow}`,
       }}
     >
       <h4 sx={{ mb: 0 }}>{title}</h4>

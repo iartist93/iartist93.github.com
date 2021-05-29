@@ -9,6 +9,7 @@ import SectionContent from '../../src/components/resume/SectionContent';
 import resumeData from '../../src/data/resumeData';
 import SkillsContent from '../../src/components/resume/SkillsContent';
 import TextContent from '../../src/components/resume/TextContent';
+import ColorMode from '../../src/components/ColorMode';
 
 const Resume = () => {
   return (
@@ -22,46 +23,61 @@ const Resume = () => {
         mt: 4,
       }}
     >
-      <a
-        as={Link}
-        href='/'
-        sx={{
-          textDecoration: 'none',
-          color: 'black',
-          fontWeight: 'heading',
-          m: 0,
-          ml: [12, 0],
-          fontSize: [2, 3],
-          fontFamily: 'text',
-          ':hover': {
-            textDecoration: 'underline',
-          },
-        }}
-      >
-        Ahmad Ayman
-      </a>
-      <p
-        sx={{
-          m: 0,
-          p: 0,
-          ml: [12, 0],
-          fontSize: [1, 2],
-          color: 'black',
-          fontFamily: 'text',
-          lineHeight: '1.2',
-        }}
-      >
-        Front-End Engineer
-      </p>
-      <Themed.h1 sx={{ fontSize: [4, 6], maxWidth: 400, ml: [12, 0], mt: 0 }}>
-        Resume,
-      </Themed.h1>
       <div
         sx={{
-          backgroundColor: 'lightblue3',
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+      >
+        <div>
+          <a
+            as={Link}
+            href='/'
+            sx={{
+              textDecoration: 'none',
+              fontWeight: 'heading',
+              color: 'text',
+              m: 0,
+              ml: [12, 0],
+              fontSize: [2, 3],
+              fontFamily: 'text',
+              ':hover': {
+                textDecoration: 'underline',
+              },
+            }}
+          >
+            Ahmad Ayman
+          </a>
+          <p
+            sx={{
+              m: 0,
+              p: 0,
+              ml: [12, 0],
+              fontSize: [1, 2],
+              color: 'text',
+              fontFamily: 'text',
+              lineHeight: '1.2',
+            }}
+          >
+            Front-End Engineer
+          </p>
+          <Themed.h1
+            sx={{ fontSize: [4, 6], maxWidth: 400, ml: [12, 0], mt: 0 }}
+          >
+            Resume,
+          </Themed.h1>
+        </div>
+        <ColorMode />
+      </div>
+      <div
+        sx={{
+          backgroundColor: 'bgblue200',
           borderRadius: 5,
           border: `10px solid black`,
-          borderColor: 'lightblue3',
+          borderColor: 'bgblue200',
+          boxShadow: (theme) => `2px 2px 5px 0px ${theme.colors.shadow}`,
         }}
       >
         {Object.keys(resumeData).map((section) => {

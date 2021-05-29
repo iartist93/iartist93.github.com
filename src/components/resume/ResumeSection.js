@@ -16,7 +16,8 @@ const ResumeSection = ({ title, children }) => {
         sx={{
           width: '100%',
           py: 1,
-          backgroundColor: 'lightblue1',
+          backgroundColor: 'bgblue300',
+          boxShadow: (theme) => `-1px 1px 2px 0px ${theme.colors.shadow}`,
           pl: 2,
         }}
       >

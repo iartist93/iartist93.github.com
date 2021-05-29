@@ -2,9 +2,7 @@
 
 import React from 'react';
 
-const SectionContent = ({
-  ch
-}) => {
+const SectionContent = ({ ch }) => {
   return (
     <article>
       <div
@@ -21,15 +19,15 @@ const SectionContent = ({
             href={website}
             sx={{
               textDecoration: 'none',
-              color: 'blue1',
+              color: 'primary',
             }}
           >
             {where}
           </a>
         </h4>
         <p sx={{ display: 'flex', mr: 3 }}>
-          <span sx={{ mr: 1, color: 'darkblue3' }}>{startDate}</span> -{' '}
-          <span sx={{ ml: 1, color: 'darkblue3' }}>{endDate}</span>
+          <span sx={{ mr: 1, color: 'black400' }}>{startDate}</span> -{' '}
+          <span sx={{ ml: 1, color: 'black400' }}>{endDate}</span>
         </p>
       </div>
       <p sx={{ m: 0, ml: 4 }}>
