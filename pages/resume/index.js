@@ -18,7 +18,7 @@ const Resume = () => {
         width: ['100%', '100%', '750px'],
         margin: '0 auto',
         alignItems: 'flex-start',
-        p: 10,
+        p: [20, 20, 10, 10],
         pt: [3, 30],
         mt: 4,
       }}
@@ -29,6 +29,8 @@ const Resume = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
+          // backgroundColor: 'red',
+          px: [10, 2],
         }}
       >
         <div>
@@ -40,7 +42,7 @@ const Resume = () => {
               fontWeight: 'heading',
               color: 'text',
               m: 0,
-              ml: [12, 0],
+              // ml: [12, 0],
               fontSize: [2, 3],
               fontFamily: 'text',
               ':hover': {
@@ -54,7 +56,7 @@ const Resume = () => {
             sx={{
               m: 0,
               p: 0,
-              ml: [12, 0],
+              // ml: [12, 0],
               fontSize: [1, 2],
               color: 'text',
               fontFamily: 'text',
@@ -63,9 +65,7 @@ const Resume = () => {
           >
             Front-End Engineer
           </p>
-          <Themed.h1
-            sx={{ fontSize: [4, 6], maxWidth: 400, ml: [12, 0], mt: 0 }}
-          >
+          <Themed.h1 sx={{ fontSize: [4, 6], maxWidth: 400, mt: 0 }}>
             Resume,
           </Themed.h1>
         </div>

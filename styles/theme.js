@@ -20,8 +20,9 @@ const theme = {
       alignItems: 'center',
       width: ['100%', '100%', '660px'],
       margin: '0 auto',
-      p: 10,
-      pt: 30,
+      p: [20, 20, 10],
+      pt: [10, 30, 60],
+      // backgroundColor: 'red',
     },
     pageBorder: {
       border: '8px solid black',
