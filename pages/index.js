@@ -17,7 +17,7 @@ const HomePage = () => {
     try {
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts/`);
       const result = await response.json();
-      console.log('GET ', result);
+      // console.log('GET ', result);
       return result;
     } catch (e) {
       console.error(`Error getting posts `, e);
@@ -31,7 +31,7 @@ const HomePage = () => {
         post,
         'PATCH'
       );
-      console.log('updated ', result);
+      // console.log('updated ', result);
       return result;
     } catch (e) {
       console.error(`Error updating post ${id} `, e);
@@ -45,7 +45,7 @@ const HomePage = () => {
         {},
         'DELETE'
       );
-      console.log('deleted ', result);
+      // console.log('deleted ', result);
       return result;
     } catch (e) {
       console.error(`Error deleting post ${id} `, e);
@@ -58,7 +58,7 @@ const HomePage = () => {
         `${process.env.NEXT_PUBLIC_API_URL}/posts`,
         post
       );
-      console.log('created ', result);
+      // console.log('created ', result);
       return result;
     } catch (e) {
       console.error(`Error creating new post  `, e);

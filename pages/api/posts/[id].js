@@ -36,10 +36,8 @@ const hanlder = nc()
   .delete((req, res) => {
     const { id } = req.query;
     const index = getIndex(id);
-    console.log(index);
     if (index >= 0) {
       posts.splice(index, 1);
-      console.log(posts);
       res.send(posts);
     } else {
       res.status(404);

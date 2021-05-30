@@ -37,17 +37,13 @@ const SectionContent = ({
           <span sx={{ ml: 1, color: 'black400' }}>{endDate}</span>
         </p>
       </div>
-      <p sx={{ variant: 'layout.contentText' }}>
-        {description.length === 1 ? (
-          <p sx={{ fontSize: [1, 2], m: 0, p: 0, pl: 2 }}>{description[0]}</p>
-        ) : (
-          <ul sx={{ m: 0, p: 0, pl: 2 }}>
-            {description.map((item) => (
-              <li sx={{ listStyle: 'none' }}>{item}</li>
-            ))}
-          </ul>
-        )}
-      </p>
+      <div sx={{ variant: 'layout.contentText' }}>
+        <ul sx={{ m: 0, p: 0, pl: 2 }}>
+          {description.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
     </article>
   );
 };

@@ -7,7 +7,7 @@ export default {
       startDate: 'Dec 2020',
       endDate: 'Feb 2021',
       description: [
-        'Designed and developed a food tracker app using Flutter, BLoC and SQLite for a children health origanization',
+        'Designed and developed a food tracker app using Flutter, BLoC and SQLite for a children health origanization.',
       ],
     },
     {
@@ -58,8 +58,8 @@ export default {
       startDate: 'Jul 2016',
       endDate: 'Nov 2016',
       description: [
-        'Responsible for publishing EstimationKings game to iOS',
-        'Worked on Gameplay Animation',
+        'Responsible for publishing EstimationKings game to iOS.',
+        'Worked on Gameplay Animation.',
         'Helped with backend development using Smartfox.',
       ],
     },
@@ -122,7 +122,7 @@ export default {
     },
     {
       title: 'Programming Languages',
-      row: true,
+      row: false,
       skills: ['Javascript', 'Dart', 'Python', 'C++'],
     },
     {

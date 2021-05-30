@@ -18,13 +18,12 @@ export default function Footer() {
           sx={{
             textDecoration: 'none',
             color: 'primary',
-            fontWeight: 500,
+            fontWeight: 100,
             mx: 1,
           }}
         >
-          @Next.js
+          Next.js
         </a>
-        {'  '} {new Date().getFullYear()}
       </div>
     </div>
   );

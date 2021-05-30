@@ -31,11 +31,7 @@ const SectionContent = ({ ch }) => {
         </p>
       </div>
       <p sx={{ m: 0, ml: 4 }}>
-        {/* <ul sx={{ m: 0, p: 0 }}>
-          <li>Tool development using Python/MEL for Maya.</li>
-          <li>Running FX Shots for Netflix Paranormal series.</li>
-        </ul> */}
-        <p sx={{ m: 0, p: 0 }}>{description}</p>
+        <span sx={{ m: 0, p: 0 }}>{description}</span>
       </p>
     </article>
   );

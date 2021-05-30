@@ -8,7 +8,6 @@ const hanlder = nc()
   })
   .post((req, res) => {
     const { id, title, content } = req.query;
-    console.log(req.body, typeof req.body);
     const post = {
       ...req.body,
       id: new Date().getTime(),

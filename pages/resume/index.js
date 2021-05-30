@@ -80,17 +80,17 @@ const Resume = () => {
           boxShadow: (theme) => `2px 2px 5px 0px ${theme.colors.shadow}`,
         }}
       >
-        {Object.keys(resumeData).map((section) => {
+        {Object.keys(resumeData).map((section, index) => {
           const sectionData = resumeData[section];
           return (
-            <ResumeSection title={section}>
-              {sectionData.map((entry) => {
+            <ResumeSection key={index} title={section}>
+              {sectionData.map((entry, index) => {
                 return section === 'Skills' ? (
-                  <SkillsContent {...entry} />
+                  <SkillsContent key={index} {...entry} />
                 ) : section === 'Hobbies' || section === 'Awards' ? (
-                  <TextContent {...entry} />
+                  <TextContent key={index} {...entry} />
                 ) : (
-                  <SectionContent {...entry} />
+                  <SectionContent key={index} {...entry} />
                 );
               })}
             </ResumeSection>

@@ -3,7 +3,6 @@
 import React from 'react';
 
 const ResumeSection = ({ title, children }) => {
-  console.log('childrem ', children);
   return (
     <section
       sx={{

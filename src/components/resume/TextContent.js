@@ -3,16 +3,16 @@
 const TextContent = ({ list, row }) => {
   return (
     <article>
-      <p sx={{ variant: 'layout.contentText', ml: 2, mt: 3 }}>
-        <ul sx={{ m: 0, p: 0 }}>
+      <div sx={{ variant: 'layout.contentText', ml: 2, mt: 3 }}>
+      <ul sx={{ m: 0, p: 0, ml: row ? 3 : 4 }}>
           {list.map((item, index) => (
-            <li sx={{ listStyle: 'none', display: row ? 'inline' : 'block' }}>
+            <li key={index} sx={{ display: row ? 'inline' : 'list-item' }}>
               {item}
               {row && index !== list.length - 1 && <span> {' - '}</span>}
             </li>
           ))}
         </ul>
-      </p>
+      </div>
     </article>
   );
 };

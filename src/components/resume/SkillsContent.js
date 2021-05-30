@@ -6,16 +6,16 @@ const SkillsContent = ({ title, skills, row }) => {
       <h4 sx={{ variant: 'layout.contentTitle', mt: 3, mb: 1, ml: 2 }}>
         {title}{' '}
       </h4>
-      <p sx={{ variant: 'layout.contentText', ml: 2 }}>
-        <ul sx={{ m: 0, p: 0 }}>
+      <div sx={{ variant: 'layout.contentText', ml: 2 }}>
+        <ul sx={{ m: 0, p: 0, ml: row ? 3 : 4 }}>
           {skills.map((item, index) => (
-            <li sx={{ listStyle: 'none', display: row ? 'inline' : 'block' }}>
+            <li key={index} sx={{ display: row ? 'inline' : 'list-item' }}>
               {item}
               {row && index !== skills.length - 1 && <span> {' - '}</span>}
             </li>
           ))}
         </ul>
-      </p>
+      </div>
     </article>
   );
 };
