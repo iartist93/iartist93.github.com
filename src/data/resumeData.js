@@ -7,7 +7,7 @@ export default {
       startDate: 'Dec 2020',
       endDate: 'Feb 2021',
       description: [
-        'Designed and developed Food Tracker App using Flutter, BLoC and SQLite for a children health origanization',
+        'Designed and developed a food tracker app using Flutter, BLoC and SQLite for a children health origanization',
       ],
     },
     {
@@ -17,8 +17,8 @@ export default {
       startDate: 'May 2020',
       endDate: 'Jun 2020',
       description: [
-        'Tool development using Python/MEL for Maya.',
-        'Running FX Shots for Netflix Paranormal series.',
+        'Developed tools using Python/MEL/VEX that used by FX/Animation department across multiple projects.',
+        'Worked on FX shots for Netflix Paranormal series.',
       ],
     },
     {
@@ -28,8 +28,9 @@ export default {
       startDate: 'Apr 2020',
       endDate: 'May 2020',
       description: [
-        'Overseen the characters hair/fur pipeline for commercial animation series.',
-        'Running look development and lighting shots.',
+        'Developed and enhanced the characters hair/fur pipeline for animation.',
+        'Worked on shading, lighting and rendering across multiple shots.',
+        'Helped integerating Katana into the lookdev pipeline.',
       ],
     },
     {
@@ -38,10 +39,7 @@ export default {
       website: 'https://www.snapperstech.com/',
       startDate: 'Feb 2020',
       endDate: 'Mar 2020',
-      description: [
-        'RnD for optimizing character facial rigging.',
-        'Tool development using Python/C++.',
-      ],
+      description: ['RnD for optimizing character facial rigging.'],
     },
     {
       title: 'Game Developer',
@@ -50,7 +48,7 @@ export default {
       startDate: '2016',
       endDate: '2018',
       description: [
-        'Designed and developed VR experience using Unreal Engine.',
+        'Designed and developed VR experience using Unreal Engine for multiple clients and projects.',
       ],
     },
     {
@@ -60,7 +58,9 @@ export default {
       startDate: 'Jul 2016',
       endDate: 'Nov 2016',
       description: [
-        'Designed and developed VR experience using Unreal Engine.',
+        'Responsible for publishing EstimationKings game to iOS',
+        'Worked on Gameplay Animation',
+        'Helped with backend development using Smartfox.',
       ],
     },
   ],
@@ -70,7 +70,7 @@ export default {
       where: 'Udacity',
       website: 'https://www.udacity.com/',
       startDate: 'Dec 2020',
-      endDate: 'Present',
+      endDate: 'Jun 2021',
       description: [
         'Front End Web Developer Nanodegree.',
         'React Developer Nanodegree.',
