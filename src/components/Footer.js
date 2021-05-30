@@ -9,7 +9,7 @@ export default function Footer() {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          fontSize: 20,
+          fontSize: 18,
         }}
       >
         Built with{' '}
@@ -24,7 +24,7 @@ export default function Footer() {
         >
           @Next.js
         </a>
-        {'  '} ❤ {new Date().getFullYear()}
+        {'  '} {new Date().getFullYear()}
       </div>
     </div>
   );
