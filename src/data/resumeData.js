@@ -7,7 +7,7 @@ export default {
       startDate: 'Dec 2020',
       endDate: 'Feb 2021',
       description: [
-        'Designed and developed a food tracker app using Flutter, BLoC and SQLite for a children health origanization.',
+        'Designed and developed a food tracker app using Flutter, BLoC and SQLite for a children health organization.',
       ],
     },
     {
@@ -30,7 +30,7 @@ export default {
       description: [
         'Developed and enhanced the characters hair/fur pipeline for animation.',
         'Worked on shading, lighting and rendering across multiple shots.',
-        'Helped integerating Katana into the lookdev pipeline.',
+        'Helped integrating Katana into the lookdev pipeline.',
       ],
     },
     {
@@ -49,7 +49,7 @@ export default {
       endDate: 'Jan 2020',
       description: [
         'Developed a plugin using Python/C++ that used by the LookDev department across multiple projects.',
-        'Worked on mutliple FX Shots on elements like smoke, dust, grass rigging and animation, big scale ocean simulatoin.',
+        'Worked on multiple FX Shots on elements like smoke, dust, grass rigging and animation, big scale ocean simulation.',
       ],
     },
     {
@@ -68,9 +68,9 @@ export default {
       startDate: 'Jul 2016',
       endDate: 'Nov 2016',
       description: [
-        'Responsible for publishing EstimationKings game to iOS.',
+        'Handled porting and publishing Estimation Kings game to iOS platform.',
         'Worked on Gameplay Animation.',
-        'Helped with backend development using Smartfox.',
+        'Helped with backend development using SmartFox.',
       ],
     },
   ],
