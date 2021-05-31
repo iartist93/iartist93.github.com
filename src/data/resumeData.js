@@ -42,9 +42,19 @@ export default {
       description: ['RnD for optimizing character facial rigging.'],
     },
     {
+      title: 'FX Artist/TD',
+      where: 'Mercury Visual Solutions',
+      website: 'https://www.mercuryvfx.com/',
+      startDate: 'Sep 2019',
+      endDate: 'Jan 2020',
+      description: [
+        'Developed a plugin using Python/C++ that used by the LookDev department across multiple projects.',
+        'Worked on mutliple FX Shots on elements like smoke, dust, grass rigging and animation, big scale ocean simulatoin.',
+      ],
+    },
+    {
       title: 'Game Developer',
       where: 'Freelancer',
-      // website: 'https://www.snapperstech.com/',
       startDate: '2016',
       endDate: '2018',
       description: [
