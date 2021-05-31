@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
           flex: 1,
         }}
       >
-        <p sx={{ flex: 1 }}>{content}.</p>
+        <p sx={{ flex: 1 }}>{content}</p>
         <div
           sx={{
             display: 'flex',

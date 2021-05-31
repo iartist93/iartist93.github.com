@@ -11,6 +11,37 @@ const theme = {
       width: 25,
     },
   },
+  buttons: {
+    filterShared: {
+      width: '80px',
+      height: '35px',
+      background: 'transparent',
+      border: 'none',
+      outline: 'none',
+      cursor: 'pointer',
+      color: 'gray500',
+      fontSize: 1,
+      textAlign: 'center',
+      p: 10,
+    },
+    filter: {
+      variant: 'buttons.filterShared',
+    },
+    filterActive: {
+      variant: 'buttons.filterShared',
+      backgroundColor: 'button2',
+      fontWeight: 'heading',
+      borderRadius: 6,
+      color: 'black',
+      boxShadow: (theme) => `2px 2px 5px 0px ${theme.colors.shadow}`,
+      ':hover': {
+        backgroundColor: 'heighlight2',
+      },
+      ':active': {
+        backgroundColor: 'active2',
+      },
+    },
+  },
   layout: {
     page: {
       display: 'flex',
@@ -63,6 +94,7 @@ const theme = {
       color: 'black300',
       fontWeight: 'heading',
       borderRadius: 8,
+      cursor: 'pointer',
       boxShadow: (theme) => `-2px 2px 5px 0px ${theme.colors.shadow}`,
       ':hover': {
         backgroundColor: 'heighlight',
@@ -94,20 +126,23 @@ const theme = {
     border: '#b6c9f0',
     bgblue100: '#f8fafe', //cards, resume bg
     bgblue200: '#fafcff',
-    // bgblue300: '#e5f2ff',
     bgblue300: '#c5d4f3', // buttons
+    button2: '#dfe1e5',
     black300: '#373c48', // button text
     black400: '#5c6166',
+    gray500: '#999FAC',
     red100: '#FFDEDA',
     shadow: '#e9eaed',
     heighlight: '#ccd9f5',
-    active: 'a4b5d8',
+    heighlight2: '#e2e4e8',
+    active: '#a4b5d8',
+    active2: '#c9cbce',
     modes: {
       dark: {
         text: '#E6F6F7',
-        background: '#252d53',
+        // background: '#252d53',
+        background: '#2A1855',
         primary: '#0cf',
-        // bgblue100: '#263154',
         bgblue100: '#374049',
         bgblue200: '#323a42',
         bgblue300: '#5b6578',
@@ -117,6 +152,10 @@ const theme = {
         red100: '#E2FCFF',
         heighlight: '#6b7486',
         active: '#525b6c',
+        button2: '#C3C7CE',
+        heighlight2: '#c9cdd3',
+        active2: '#b0b3b9',
+        gray500: '#a3a9b4',
       },
     },
     // blue1: '#6930c3',

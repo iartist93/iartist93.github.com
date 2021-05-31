@@ -35,7 +35,7 @@ const Resume = () => {
       >
         <div>
           <a
-            as={Link}
+            as='Link'
             href='/'
             sx={{
               textDecoration: 'none',

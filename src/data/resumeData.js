@@ -30,7 +30,7 @@ export default {
       description: [
         'Developed and enhanced the characters hair/fur pipeline for animation.',
         'Worked on shading, lighting and rendering across multiple shots.',
-        'Helped integrating Katana into the lookdev pipeline.',
+        'Helped to integrate Katana into the Lookdev pipeline.',
       ],
     },
     {

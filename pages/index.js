@@ -4,13 +4,12 @@
 import { jsx, Themed, useColorMode } from 'theme-ui';
 import { darken, lighten } from '@theme-ui/color';
 import Link from 'next/link';
-import ProjectCard from '../src/components/ProjectCard';
-import projectData from '../src/data/projectData';
 
 import ReactPlayer from 'react-player';
 import { useEffect } from 'react';
 import { postData } from '../src/helpers/post';
 import ColorMode from '../src/components/ColorMode';
+import LatestProjects from '../src/components/projects/LatestProject';
 
 const HomePage = () => {
   const getAllPosts = async () => {
@@ -129,7 +128,7 @@ const HomePage = () => {
         >
           <ColorMode />
           <a
-            as={Link}
+            as='Link'
             href='/resume'
             sx={{
               backgroundColor: 'bgblue300',
@@ -259,21 +258,7 @@ const HomePage = () => {
           </a>
         </section>
       </section>
-      <div sx={{ width: '100%', mt: 40 }}>
-        <h2>Latest Projects</h2>
-        <div
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-          }}
-        >
-          {projectData.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
-        </div>
-      </div>
+      <LatestProjects />
 
       <div sx={{ width: '100%', mt: 40 }}>
         <h2>Latest Artwork</h2>
@@ -310,15 +295,6 @@ const HomePage = () => {
           WIP...
         </div>
       </div>
-
-      {/* <Themed.a as={Link} href='/projects'>
-          Projects
-        </Themed.a>
-        <p>
-          This should be a very long text please This should be a very long text
-          please This should be a very long text please This should be a very
-          long text please.
-        </p> */}
     </div>
   );
 };
