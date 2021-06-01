@@ -25,15 +25,18 @@ export default function LatestProjects() {
       <div
         sx={{
           display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
+          flexDirection: ['column', 'row'],
+          alignItems: ['flex-start', 'center'],
+          justifyContent: ['flex-start', 'space-between'],
         }}
       >
         <h2>Latest Projects</h2>
         <div
           sx={{
             display: 'flex',
-            mr: 10,
+            justifyContent: ['center', 'flex-end'],
+            mb: [20, 0],
+            width: ['100%', 'auto'],
           }}
         >
           {Object.keys(filters).map((key) => (
