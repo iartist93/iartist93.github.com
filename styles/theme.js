@@ -140,8 +140,8 @@ const theme = {
     modes: {
       dark: {
         text: '#E6F6F7',
-        // background: '#252d53',
-        background: '#2A1855',
+        background: '#252d53',
+        // background: '#2A1855',
         primary: '#0cf',
         bgblue100: '#374049',
         bgblue200: '#323a42',
