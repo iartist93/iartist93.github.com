@@ -14,7 +14,7 @@ const filters = {
 };
 
 export default function LatestProjects() {
-  const [filter, setFilter] = useState('graphics');
+  const [filter, setFilter] = useState('web');
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
