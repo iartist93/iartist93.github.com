@@ -1,6 +1,18 @@
 export default {
   Experience: [
     {
+      title: 'Software Engineer',
+      where: 'Uniparticle',
+      website: 'https://www.uniparticle.com/home',
+      startDate: 'Jun 2021',
+      endDate: 'Present',
+      description: [
+        'Implementing a platform for course creators and course reviwers',
+        "Building resuable UI system that's used across multiple projects.",
+        'Implemented CI/CD pipleline.',
+      ],
+    },
+    {
       title: 'Flutter Developer',
       where: 'Freelancer',
       // website: 'https://aromastudios.com/',
