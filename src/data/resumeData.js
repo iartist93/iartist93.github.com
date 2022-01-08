@@ -98,7 +98,7 @@ export default {
       startDate: 'Dec 2020',
       endDate: 'Jun 2021',
       description: [
-        'Front End Web Developer Nanodegree.',
+        'Front-End Web Developer Nanodegree.',
         'React Developer Nanodegree.',
         'UX Reseach Program.',
       ],
@@ -127,12 +127,15 @@ export default {
       title: 'Tools',
       row: true,
       skills: [
+        'Vue',
+        'Nuxt',
         'React',
         'React Native',
         'NextJS',
         'Redux',
         'NodeJS',
         'Webpack',
+        'CI/CD',
         'ThemeUI',
         'MaterialUI',
         'Syled Component',
@@ -142,7 +145,6 @@ export default {
         'SQLite',
         'Firebase',
         'Git',
-        'CI/CD',
         'Unity',
         'Unreal Engine',
       ],
@@ -150,7 +152,7 @@ export default {
     {
       title: 'Programming Languages',
       row: false,
-      skills: ['Javascript', 'Dart', 'Python', 'C++'],
+      skills: ['Typescript', 'Javascript', 'Dart', 'Python', 'C++'],
     },
     {
       title: 'Additional Technical Skills',
