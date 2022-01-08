@@ -7,7 +7,7 @@ export default {
       startDate: 'Jun 2021',
       endDate: 'Present',
       description: [
-        'Implementing a platform for course creators and course reviwers',
+        'Building a new plaform for discovery education for course creators and course reviwers',
         "Building resuable UI system that's used across multiple projects.",
         'Implemented CI/CD pipleline.',
       ],
