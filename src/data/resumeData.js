@@ -11,9 +11,9 @@ export default {
         "Building resuable UI system that's used across multiple projects.",
         'Integerated and early adapter of new features like Vue3, Typescript and Composition-API.',
         'Implemented CI/CD pipleline.',
-        'Collaberated with the product owener to address and solve design issues.',
-        'Helped UX/UI team enhancing the user experience and app look.',
-        'Worked with the bakcend to design APIs.',
+        'Collaberated with the Product Owener to address and solve design issues.',
+        'Helped UX/UI team enhancing the user experience and the App looking.',
+        'Worked with the Bakcend to design APIs.',
       ],
     },
     {
