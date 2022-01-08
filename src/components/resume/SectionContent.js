@@ -15,6 +15,7 @@ const SectionContent = ({
           {title},{' '}
           <a
             href={website}
+            target={'_blank'}
             sx={{
               textDecoration: 'none',
               color: 'primary',
