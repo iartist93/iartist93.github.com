@@ -100,6 +100,7 @@ export default {
       description: [
         'Front End Web Developer Nanodegree.',
         'React Developer Nanodegree.',
+        'UX Reseach Program.',
       ],
     },
     {
