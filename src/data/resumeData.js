@@ -8,7 +8,7 @@ export default {
       endDate: 'Present',
       description: [
         'Building a new DiscoveryEducation plaform for course creators, reviwers and admins',
-        "Building a resuable UI system that's used across multiple projects.",
+        "Building and maintaining an internal npm UI package that's used across multiple projects.",
         'Integerated and early adapted new features like Vue3, Typescript and Composition-API.',
         'Implemented CI/CD pipleline.',
         'Collaberated with the Product Owener to address and solve design issues.',
