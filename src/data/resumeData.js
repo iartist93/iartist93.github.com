@@ -7,13 +7,13 @@ export default {
       startDate: 'Jun 2021',
       endDate: 'Present',
       description: [
-        'Building a new plaform for DiscoveryEducation for course creators and course reviwers.',
-        "Building resuable UI system that's used across multiple projects.",
-        'Integerated and early adapter of new features like Vue3, Typescript and Composition-API.',
+        'Building a new DiscoveryEducation plaform for course creators, reviwers and admins',
+        "Building a resuable UI system that's used across multiple projects.",
+        'Integerated and early adapted new features like Vue3, Typescript and Composition-API.',
         'Implemented CI/CD pipleline.',
         'Collaberated with the Product Owener to address and solve design issues.',
-        'Helped UX/UI team enhancing the user experience and the App looking.',
-        'Worked with the Bakcend to design APIs.',
+        'Helped the UX/UI team enhancing the user experience and the App looking.',
+        'Worked with the Bakcend to design and improve the APIs.',
       ],
     },
     {
