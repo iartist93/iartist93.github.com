@@ -14,6 +14,7 @@ export default {
         'Collaberated with the Product Owener to address and solve design issues.',
         'Helped the UX/UI team enhancing the user experience and the App looking.',
         'Worked with the Bakcend to design and improve the APIs.',
+        'Wrote script to auto-generate .scss and .js plugins for our color system.',
       ],
     },
     {
