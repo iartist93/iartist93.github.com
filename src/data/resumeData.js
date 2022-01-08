@@ -7,7 +7,7 @@ export default {
       startDate: 'Jun 2021',
       endDate: 'Present',
       description: [
-        'Building a new plaform for discovery education for course creators and course reviwers',
+        'Building a new plaform for DiscoveryEducation for course creators and course reviwers.',
         "Building resuable UI system that's used across multiple projects.",
         'Integerated and early adapter of new features like Vue3, Typescript and Composition-API.',
         'Implemented CI/CD pipleline.',
