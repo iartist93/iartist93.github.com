@@ -3,9 +3,11 @@ import { Themed } from 'theme-ui';
 
 import Link from 'next/link';
 
+// components
 import ResumeSection from '../../src/components/resume/ResumeSection';
 import SectionContent from '../../src/components/resume/SectionContent';
 
+// database
 import resumeData from '../../src/data/resumeData';
 import SkillsContent from '../../src/components/resume/SkillsContent';
 import TextContent from '../../src/components/resume/TextContent';
