@@ -8,6 +8,6 @@ tags:
   - nextjs
 ---
 
-# First post
+## First post
 
 - This is my first blog post
